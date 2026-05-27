@@ -1,0 +1,25 @@
+# dependencies
+node_modules
+
+# build
+dist
+build
+.next
+coverage
+
+# environment
+.env
+.env.*
+
+# turborepo
+.turbo
+
+# logs
+*.log
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
