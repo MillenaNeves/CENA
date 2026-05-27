@@ -43,7 +43,7 @@ cena/
 ├── infra/            → Infraestrutura como Código (Terraform/CDK)
 │
 └── scripts/          → Scripts utilitários e automações
-
+```
 ## 🏗️ Arquitetura
 
 A arquitetura do ecossistema é baseada em microsserviços integrados orientados a eventos, dividida em quatro camadas funcionais:
