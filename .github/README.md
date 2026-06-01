@@ -54,3 +54,18 @@ A arquitetura do ecossistema é baseada em microsserviços integrados orientados
 4 *Camada de Persistência e Processamento:* Banco de dados relacional PostgreSQL rodando rotinas de cálculo do Motor de Matching no servidor (Server-Side).
 
 ## 🚀 Instalação e Inicialização Local
+
+Em definição
+Será documentado posteriormente
+
+## 👥 Equipe
+
+Projeto desenvolvido pelos estudantes da disciplina de Engenharia de Requisitos
+
+- Guilherme Vinícius Cesar Cavalcante
+- Itallo Augusto
+- Millena Ferreira Marçal das Neves
+- Pablo Henrique Ferreira da Silva
+- Victor Amarante Florentino da Silva
+- Vinícius Guedes de Macêdo
+- Vitor Hugo Mendonça de Queiroz
