@@ -2,7 +2,7 @@ from pathlib import Path
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 ENV_PATH = BASE_DIR / ".env"
 
 
@@ -16,10 +16,6 @@ class Settings(BaseSettings):
     evo_base_url: str
     evo_instance_name: str
     groq_api_key: str
-    openrouteservice_api_key: str
-
-    user_latitude: float = -8.04887728646683
-    user_longitude: float = -34.95138771773008
 
 
 settings = Settings()

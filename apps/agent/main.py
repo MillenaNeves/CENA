@@ -9,8 +9,7 @@ from agent.core.exceptions import (
     app_exception_handler,
     webhook_ignored_handler,
 )
-from agent.dependencies import evolution_service, eta_service
-from agent.routers.bus_location import router as bus_location_router
+from agent.dependencies import evolution_service
 from agent.routers.webhook import router as webhook_router
 
 
@@ -18,7 +17,6 @@ from agent.routers.webhook import router as webhook_router
 async def lifespan(_app: FastAPI):
     yield
     await evolution_service.close()
-    await eta_service.close()
 
 
 app = FastAPI(lifespan=lifespan)
@@ -35,4 +33,3 @@ app.add_exception_handler(WebhookIgnoredError, webhook_ignored_handler)
 app.add_exception_handler(AppException, app_exception_handler)
 
 app.include_router(webhook_router)
-app.include_router(bus_location_router)
